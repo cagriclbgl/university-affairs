@@ -1,0 +1,41 @@
+﻿@model UniversityAffairs.Models.LessonSchedule
+
+@{
+    ViewData["Title"] = "Delete Lesson Schedule";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container py-4">
+    <h2 class="mb-4 text-danger">🗑️ Delete Lesson Schedule</h2>
+
+    <p>Are you sure you want to delete the following lesson schedule?</p>
+
+    <dl class="row">
+        <dt class="col-sm-3">Day</dt>
+        <dd class="col-sm-9">@Model.Day</dd>
+
+        <dt class="col-sm-3">Time</dt>
+        <dd class="col-sm-9">@Model.StartTime.ToString(@"hh\:mm") - @Model.EndTime.ToString(@"hh\:mm")</dd>
+
+        <dt class="col-sm-3">Lesson</dt>
+        <dd class="col-sm-9">@Model.Lesson?.LessonName</dd>
+
+        <dt class="col-sm-3">Instructor</dt>
+        <dd class="col-sm-9">@Model.Instructor?.FullName</dd>
+
+        <dt class="col-sm-3">Classroom</dt>
+        <dd class="col-sm-9">@Model.Classroom?.RoomName</dd>
+
+        <dt class="col-sm-3">Grade</dt>
+        <dd class="col-sm-9">@Model.Grade?.Name</dd>
+
+        <dt class="col-sm-3">Term</dt>
+        <dd class="col-sm-9">@Model.Term?.Name</dd>
+    </dl>
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <button type="submit" class="btn btn-danger">Yes, Delete</button>
+        <a asp-action="Index" class="btn btn-secondary ms-2">← Cancel</a>
+    </form>
+</div>

@@ -1,0 +1,24 @@
+﻿@model UniversityAffairs.Models.Lesson
+
+@{
+    ViewData["Title"] = "Lesson Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container py-4">
+    <h2 class="mb-4">📄 Lesson Details</h2>
+
+    <dl class="row">
+        <dt class="col-sm-3">Lesson Code</dt>
+        <dd class="col-sm-9">@Model.LessonCode</dd>
+
+        <dt class="col-sm-3">Lesson Name</dt>
+        <dd class="col-sm-9">@Model.LessonName</dd>
+
+        <dt class="col-sm-3">Credit</dt>
+        <dd class="col-sm-9">@Model.Credit</dd>
+    </dl>
+
+    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary">Edit</a>
+    <a asp-action="Index" class="btn btn-secondary ms-2">← Back to List</a>
+</div>

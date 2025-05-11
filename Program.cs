@@ -1,0 +1,119 @@
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+using UniversityAffairs.Data;
+using UniversityAffairs.Models;
+
+var builder = WebApplication.CreateBuilder(args);
+
+// ⭐ DbContext
+builder.Services.AddDbContext<UniversityDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("UniversityDbContext")));
+
+// ⭐ Identity + Role desteği
+builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
+    .AddEntityFrameworkStores<UniversityDbContext>()
+    .AddDefaultTokenProviders();
+
+// ⭐ Cookie ayarları
+builder.Services.ConfigureApplicationCookie(options =>
+{
+    options.LoginPath = "/Account/Login";
+    options.AccessDeniedPath = "/Account/AccessDenied";
+});
+
+builder.Services.AddControllersWithViews();
+
+var app = builder.Build();
+
+// ⭐ Geliştirme ortamı dışı ise exception handler
+if (!app.Environment.IsDevelopment())
+{
+    app.UseExceptionHandler("/Home/Error");
+    app.UseHsts();
+}
+
+app.UseHttpsRedirection();
+app.UseStaticFiles();
+
+app.UseRouting();
+
+// ⭐ Authentication ve Authorization
+app.UseAuthentication(); // mutlaka authorization'dan önce gelmeli
+app.UseAuthorization();
+
+// ⭐ Varsayılan rota
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Home}/{action=Entry}/{id?}");
+
+
+// ⭐ Rolleri otomatik ekleyen fonksiyon
+async Task SeedRoles(IServiceProvider serviceProvider)
+{
+    var roleManager = serviceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+    string[] roles = { "DepartmentHead", "Secretary", "Instructor" };
+
+    foreach (var role in roles)
+    {
+        if (!await roleManager.RoleExistsAsync(role))
+        {
+            await roleManager.CreateAsync(new IdentityRole(role));
+        }
+    }
+}
+
+async Task SeedAdminUser(IServiceProvider serviceProvider)
+{
+    var userManager = serviceProvider.GetRequiredService<UserManager<ApplicationUser>>();
+
+    string username = "admin";
+    string password = "Admin123!";
+
+    var existingUser = await userManager.FindByNameAsync(username);
+    if (existingUser == null)
+    {
+        var user = new ApplicationUser
+        {
+            UserName = username,
+            FullName = "Bölüm Başkanı",
+            Email = "admin@example.com", // Identity bazen boş email nedeniyle de hata verir
+            EmailConfirmed = true
+        };
+
+        var result = await userManager.CreateAsync(user, password);
+        if (result.Succeeded)
+        {
+            await userManager.AddToRoleAsync(user, "DepartmentHead");
+            Console.WriteLine("Admin kullanıcısı başarıyla eklendi.");
+        }
+        else
+        {
+            foreach (var error in result.Errors)
+            {
+                Console.WriteLine($"Hata: {error.Description}");
+            }
+        }
+    }
+    else
+    {
+        Console.WriteLine("Admin zaten kayıtlı.");
+    }
+}
+
+
+// ekle:
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    await SeedRoles(services);
+    await SeedAdminUser(services); // ← bunu da çağır!
+}
+
+// ⭐ Uygulama başlatılırken roller eklenir
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    await SeedRoles(services);
+}
+
+app.Run();

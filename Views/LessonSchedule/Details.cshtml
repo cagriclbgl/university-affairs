@@ -1,0 +1,41 @@
+﻿@model UniversityAffairs.Models.LessonSchedule
+
+@{
+    ViewData["Title"] = "Lesson Schedule Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container py-5">
+    <h2 class="mb-4 text-info">📋 Lesson Schedule Details</h2>
+
+    <dl class="row">
+        <dt class="col-sm-3">Day</dt>
+        <dd class="col-sm-9">@Model.Day</dd>
+
+        <dt class="col-sm-3">Start Time</dt>
+        <dd class="col-sm-9">@Model.StartTime.ToString(@"hh\:mm")</dd>
+
+        <dt class="col-sm-3">End Time</dt>
+        <dd class="col-sm-9">@Model.EndTime.ToString(@"hh\:mm")</dd>
+
+        <dt class="col-sm-3">Lesson</dt>
+        <dd class="col-sm-9">@Model.Lesson?.LessonName</dd>
+
+        <dt class="col-sm-3">Instructor</dt>
+        <dd class="col-sm-9">@Model.Instructor?.FullName</dd>
+
+        <dt class="col-sm-3">Classroom</dt>
+        <dd class="col-sm-9">@Model.Classroom?.RoomName</dd>
+
+        <dt class="col-sm-3">Grade</dt>
+        <dd class="col-sm-9">@Model.Grade?.Name</dd>
+
+        <dt class="col-sm-3">Term</dt>
+        <dd class="col-sm-9">@Model.Term?.Name</dd>
+    </dl>
+
+    <div class="mt-4 d-flex gap-2">
+        <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">Edit</a>
+        <a asp-action="Index" class="btn btn-secondary">← Back to List</a>
+    </div>
+</div>

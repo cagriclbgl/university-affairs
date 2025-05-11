@@ -1,0 +1,106 @@
+﻿@model List<UniversityAffairs.Models.LessonSchedule>
+
+@{
+    ViewData["Title"] = "Weekly Schedule";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    var daysOfWeek = new[] { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday" };
+    var startHour = 8;
+    var endHour = 17;
+    var hours = Enumerable.Range(startHour, endHour - startHour + 1).ToList(); // 08:00–17:00 dahil
+    var processed = new HashSet<string>();
+}
+
+<div class="container py-5">
+    <!-- 🔙 Back Butonu -->
+    <div class="mb-3">
+        <a asp-controller="Home" asp-action="Index" class="btn btn-secondary fw-bold px-4 py-2">
+            ← Back to Entry Page
+        </a>
+    </div>
+
+    <h2 class="mb-4">📅 Weekly Schedule</h2>
+
+    <!-- 🎓 Filtreleme -->
+    <form method="get" class="row g-3 align-items-end mb-4">
+        <div class="col-md-4">
+            <label class="form-label">Grade</label>
+            <select name="gradeId" class="form-select" asp-items="ViewBag.GradeId">
+                <option value="">-- Select Grade --</option>
+            </select>
+        </div>
+        <div class="col-md-4">
+            <label class="form-label">Term</label>
+            <select name="termId" class="form-select" asp-items="ViewBag.TermId">
+                <option value="">-- Select Term --</option>
+            </select>
+        </div>
+        <div class="col-md-4 d-flex gap-2">
+            <button type="submit" class="btn btn-primary">Filter</button>
+            <a asp-action="WeeklySchedule" class="btn btn-secondary">Clear</a>
+        </div>
+    </form>
+
+    <!-- ⏰ Saat Tabanlı Tablo -->
+    <div class="table-responsive">
+        <table class="table table-bordered text-center align-middle">
+            <thead class="table-dark">
+                <tr>
+                    <th style="width: 100px;">Time</th>
+                    @foreach (var day in daysOfWeek)
+                    {
+                        <th>@day</th>
+                    }
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var hour in hours)
+                {
+                    var currentTime = new TimeSpan(hour, 0, 0);
+                    <tr>
+                        <td class="fw-bold">@currentTime.ToString(@"hh\:mm")</td>
+
+                        @foreach (var day in daysOfWeek)
+                        {
+                            var key = $"{day}_{hour}";
+
+                            if (processed.Contains(key))
+                            {
+                                continue;
+                            }
+
+                            var lesson = Model.FirstOrDefault(l =>
+                            l.Day == day &&
+                            l.StartTime.Hours == hour);
+
+                            if (lesson != null)
+                            {
+                                int duration = (int)(lesson.EndTime - lesson.StartTime).TotalHours;
+                                if ((lesson.EndTime - lesson.StartTime).Minutes > 0)
+                                {
+                                    duration += 1;
+                                }
+
+                                for (int i = 0; i < duration; i++)
+                                {
+                                    processed.Add($"{day}_{hour + i}");
+                                }
+
+                                <td rowspan="@duration" class="bg-light text-start small align-top">
+                                    <strong>@lesson.Lesson?.LessonName</strong><br />
+                                    <span class="text-muted">@lesson.StartTime.ToString(@"hh\:mm") - @lesson.EndTime.ToString(@"hh\:mm")</span><br />
+                                    👨‍🏫 @lesson.Instructor?.FullName<br />
+                                    🏫 @lesson.Classroom?.RoomName
+                                </td>
+                            }
+                            else if (!processed.Contains(key))
+                            {
+                                <td class="text-muted">-</td>
+                            }
+                        }
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

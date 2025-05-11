@@ -1,0 +1,49 @@
+﻿@model IEnumerable<UniversityAffairs.Models.Lesson>
+
+@{
+    ViewData["Title"] = "Lessons";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container py-4">
+    <h2 class="mb-4">📘 Manage Lessons</h2>
+
+    <div class="mb-3">
+        <a asp-action="Create" class="btn btn-success fw-bold px-4 py-2">
+            <i class="bi bi-plus-lg me-2 text-white"></i> Add New Lesson
+        </a>
+
+
+        <a asp-controller="Admin" asp-action="Panel" class="btn btn-dark fw-bold px-4 py-2">
+            <i class="bi bi-arrow-left-circle me-2"></i> Back to Admin Panel
+        </a>
+
+
+    </div>
+
+    <table class="table table-bordered table-striped text-center align-middle">
+        <thead class="table-dark">
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.LessonCode)</th>
+                <th>@Html.DisplayNameFor(model => model.LessonName)</th>
+                <th>@Html.DisplayNameFor(model => model.Credit)</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.LessonCode</td>
+                    <td>@item.LessonName</td>
+                    <td>@item.Credit</td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-primary me-1">Edit</a>
+                        <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-info me-1">Details</a>
+                        <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

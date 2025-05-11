@@ -1,0 +1,30 @@
+﻿@model UniversityAffairs.Models.Lesson
+
+@{
+    ViewData["Title"] = "Delete Lesson";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container py-4">
+    <h2 class="mb-4 text-danger">🗑️ Delete Lesson</h2>
+
+    <p>Are you sure you want to delete the following lesson?</p>
+
+    <dl class="row">
+        <dt class="col-sm-3">Lesson Code</dt>
+        <dd class="col-sm-9">@Model.LessonCode</dd>
+
+        <dt class="col-sm-3">Lesson Name</dt>
+        <dd class="col-sm-9">@Model.LessonName</dd>
+
+        <dt class="col-sm-3">Credit</dt>
+        <dd class="col-sm-9">@Model.Credit</dd>
+    </dl>
+
+    <form asp-action="Delete" method="post">
+        @* 👈 BURAYA DİKKAT *@
+        <input type="hidden" asp-for="Id" />
+        <button type="submit" class="btn btn-danger">Yes, Delete</button>
+        <a asp-action="Index" class="btn btn-secondary ms-2">Cancel</a>
+    </form>
+</div>

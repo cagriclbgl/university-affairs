@@ -1,0 +1,91 @@
+﻿@model UniversityAffairs.Models.LessonSchedule
+
+@{
+    ViewData["Title"] = "Create Lesson Schedule";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container py-5">
+    <h2 class="mb-4 text-success">➕ Add New Lesson Schedule</h2>
+
+    <form asp-action="Create" class="needs-validation" novalidate>
+        <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+
+        <div class="form-group">
+            <label asp-for="Day" class="control-label"></label>
+            <select asp-for="Day" class="form-control">
+                <option value="">-- Select Day --</option>
+                <option value="Monday">Monday</option>
+                <option value="Tuesday">Tuesday</option>
+                <option value="Wednesday">Wednesday</option>
+                <option value="Thursday">Thursday</option>
+                <option value="Friday">Friday</option>
+            </select>
+            <span asp-validation-for="Day" class="text-danger"></span>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label asp-for="StartTime" class="form-label">Start Time</label>
+                <input asp-for="StartTime" class="form-control" type="time" />
+                <span asp-validation-for="StartTime" class="text-danger"></span>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label asp-for="EndTime" class="form-label">End Time</label>
+                <input asp-for="EndTime" class="form-control" type="time" />
+                <span asp-validation-for="EndTime" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label asp-for="LessonId" class="form-label">Lesson</label>
+                <select asp-for="LessonId" class="form-select" asp-items="ViewBag.LessonId">
+                    <option value="">-- Select Lesson --</option>
+                </select>
+                <span asp-validation-for="LessonId" class="text-danger"></span>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label asp-for="InstructorId" class="form-label">Instructor</label>
+                <select asp-for="InstructorId" class="form-select" asp-items="ViewBag.InstructorId">
+                    <option value="">-- Select Instructor --</option>
+                </select>
+                <span asp-validation-for="InstructorId" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label asp-for="ClassroomId" class="form-label">Classroom</label>
+                <select asp-for="ClassroomId" class="form-select" asp-items="ViewBag.ClassroomId">
+                    <option value="">-- Select Classroom --</option>
+                </select>
+                <span asp-validation-for="ClassroomId" class="text-danger"></span>
+            </div>
+            <div class="col-md-3 mb-3">
+                <label asp-for="GradeId" class="form-label">Grade</label>
+                <select asp-for="GradeId" class="form-select" asp-items="ViewBag.GradeId">
+                    <option value="">-- Select Grade --</option>
+                </select>
+                <span asp-validation-for="GradeId" class="text-danger"></span>
+            </div>
+            <div class="col-md-3 mb-3">
+                <label asp-for="TermId" class="form-label">Term</label>
+                <select asp-for="TermId" class="form-select" asp-items="ViewBag.TermId">
+                    <option value="">-- Select Term --</option>
+                </select>
+                <span asp-validation-for="TermId" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="mt-4 d-flex gap-2">
+            <button type="submit" class="btn btn-success">Save Schedule</button>
+            <a asp-action="Index" class="btn btn-secondary">← Back to List</a>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    @await Html.PartialAsync("_ValidationScriptsPartial")
+}

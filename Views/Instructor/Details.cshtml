@@ -1,0 +1,30 @@
+﻿@model UniversityAffairs.Models.Instructor
+
+@{
+    ViewData["Title"] = "Instructor Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container py-5">
+    <h2 class="mb-4 text-info">🔍 Instructor Details</h2>
+
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <dl class="row mb-0">
+                <dt class="col-sm-3">Full Name</dt>
+                <dd class="col-sm-9">@Model.FullName</dd>
+
+                <dt class="col-sm-3">Email</dt>
+                <dd class="col-sm-9">@Model.Email</dd>
+
+                <dt class="col-sm-3">Academic Title</dt>
+                <dd class="col-sm-9">@Model.Title</dd>
+            </dl>
+        </div>
+    </div>
+
+    <div class="mt-4 d-flex gap-2">
+        <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary">✏️ Edit</a>
+        <a asp-action="Index" class="btn btn-secondary">← Back to List</a>
+    </div>
+</div>
