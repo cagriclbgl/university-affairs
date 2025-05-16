@@ -46,7 +46,6 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Entry}/{id?}");
 
-
 // ⭐ Rolleri otomatik ekleyen fonksiyon
 async Task SeedRoles(IServiceProvider serviceProvider)
 {
@@ -62,6 +61,7 @@ async Task SeedRoles(IServiceProvider serviceProvider)
     }
 }
 
+// ⭐ Admin kullanıcısı ekleniyor
 async Task SeedAdminUser(IServiceProvider serviceProvider)
 {
     var userManager = serviceProvider.GetRequiredService<UserManager<ApplicationUser>>();
@@ -76,7 +76,7 @@ async Task SeedAdminUser(IServiceProvider serviceProvider)
         {
             UserName = username,
             FullName = "Bölüm Başkanı",
-            Email = "admin@example.com", // Identity bazen boş email nedeniyle de hata verir
+            Email = "admin@example.com",
             EmailConfirmed = true
         };
 
@@ -100,20 +100,12 @@ async Task SeedAdminUser(IServiceProvider serviceProvider)
     }
 }
 
-
-// ekle:
+// ⭐ Uygulama başlatılırken roller ve admin kullanıcı eklenir
 using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
     await SeedRoles(services);
-    await SeedAdminUser(services); // ← bunu da çağır!
-}
-
-// ⭐ Uygulama başlatılırken roller eklenir
-using (var scope = app.Services.CreateScope())
-{
-    var services = scope.ServiceProvider;
-    await SeedRoles(services);
+    await SeedAdminUser(services);
 }
 
 app.Run();

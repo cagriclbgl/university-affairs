@@ -21,11 +21,39 @@
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-controller="Home" asp-action="Index">Home</a>
-
                         </li>
+
+                        @if (User.IsInRole("Instructor"))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-controller="InstructorSchedule" asp-action="MySchedule">My Schedule</a>
+                            </li>
+                        }
+
+                        @if (User.IsInRole("DepartmentHead"))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-controller="Admin" asp-action="Panel">Admin Panel</a>
+                            </li>
+                        }
+
+                        @if (User.IsInRole("Secretary"))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-controller="LessonSchedule" asp-action="Index">Lesson Scheduling</a>
+                            </li>
+                        }
+
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <li class="nav-item">
+                                <form method="post" asp-controller="Account" asp-action="Logout" class="form-inline">
+                                    <button type="submit" class="btn btn-link nav-link">Logout</button>
+                                </form>
+                            </li>
+                        }
                     </ul>
                 </div>
-
             </div>
         </nav>
     </header>

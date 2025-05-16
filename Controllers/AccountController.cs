@@ -36,14 +36,41 @@ namespace UniversityAffairs.Controllers
                 {
                     "DepartmentHead" => RedirectToAction("Index", "Admin"),
                     "Secretary" => RedirectToAction("Index", "Secretary"),
-                    "Instructor" => RedirectToAction("WeeklySchedule", "Instructor"),
+                    "Instructor" => RedirectToAction("MySchedule", "InstructorSchedule"), // ← BURASI
                     _ => RedirectToAction("Login")
                 };
             }
 
-            ViewBag.Error = "Giriş başarısız. Kullanıcı adı veya şifre yanlış.";
+            ViewBag.ErrorMessage = "Invalid login attempt.";
             return View();
         }
+
+
+
+        [HttpGet]
+        public async Task<IActionResult> CreateInstructorUser()
+        {
+            var email = "instructor1@demo.com";
+            var password = "Instructor123!";
+            var fullName = "Ali Öğretim"; // ← bunu da veriyoruz
+
+            var user = new ApplicationUser
+            {
+                UserName = email,
+                Email = email,
+                FullName = fullName
+            };
+
+            var result = await _userManager.CreateAsync(user, password);
+            if (result.Succeeded)
+            {
+                await _userManager.AddToRoleAsync(user, "Instructor");
+                return Content("Instructor kullanıcı başarıyla oluşturuldu.");
+            }
+
+            return Content("Kullanıcı oluşturulamadı.");
+        }
+
 
         [HttpPost]
         public async Task<IActionResult> Logout()
