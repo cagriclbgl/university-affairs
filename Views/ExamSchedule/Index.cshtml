@@ -1,0 +1,44 @@
+﻿@model IEnumerable<UniversityAffairs.Models.ExamSchedule>
+@{
+    ViewData["Title"] = "Exam Schedule";
+}
+<h2>Exam Schedule</h2>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Add New Exam</a>
+</p>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Lesson</th>
+            <th>Instructor</th>
+            <th>Classroom</th>
+            <th>Date</th>
+            <th>Start</th>
+            <th>End</th>
+            <th>Grade</th>
+            <th>Term</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Lesson.LessonName</td>
+                <td>@item.Instructor.FullName</td>
+                <td>@item.Classroom.RoomName</td>
+                <td>@item.ExamDate.ToShortDateString()</td>
+                <td>@item.StartTime</td>
+                <td>@item.EndTime</td>
+                <td>@item.Grade.Name</td>
+                <td>@item.Term.Name</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

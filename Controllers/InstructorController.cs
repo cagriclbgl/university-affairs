@@ -6,54 +6,64 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
 using UniversityAffairs.Data;
 using UniversityAffairs.Models;
 
 namespace UniversityAffairs.Controllers
 {
-    [Authorize(Roles = "DepartmentHead,Secretary")]
+    [Authorize(Roles = "DepartmentHead,Secretary,Instructor")]
     public class InstructorController : Controller
     {
         private readonly UniversityDbContext _context;
+        private readonly UserManager<ApplicationUser> _userManager;
 
-        public InstructorController(UniversityDbContext context)
+        public InstructorController(UniversityDbContext context, UserManager<ApplicationUser> userManager)
         {
             _context = context;
+            _userManager = userManager;
         }
 
-        // GET: Instructor
+        
+        [Authorize(Roles = "Instructor,DepartmentHead")]
+        public async Task<IActionResult> MyExams()
+        {
+            var user = await _userManager.GetUserAsync(User);
+
+            var exams = await _context.ExamSchedules
+                .Include(e => e.Lesson)
+                .Include(e => e.Classroom)
+                .Include(e => e.Grade)
+                .Include(e => e.Term)
+                .Include(e => e.Instructor)
+                .Where(e => e.Instructor.Email == user.Email)
+                .ToListAsync();
+
+            return View(exams);
+        }
+
+        // Aşağıdaki mevcut tüm CRUD işlemlerin aynen bırakıldı
+
         public async Task<IActionResult> Index()
         {
             return View(await _context.Instructors.ToListAsync());
         }
 
-        // GET: Instructor/Details/5
         public async Task<IActionResult> Details(int? id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
+            if (id == null) return NotFound();
 
-            var instructor = await _context.Instructors
-                .FirstOrDefaultAsync(m => m.Id == id);
-            if (instructor == null)
-            {
-                return NotFound();
-            }
+            var instructor = await _context.Instructors.FirstOrDefaultAsync(m => m.Id == id);
+            if (instructor == null) return NotFound();
 
             return View(instructor);
         }
 
-        // GET: Instructor/Create
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: Instructor/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,FullName,Title,Email")] Instructor instructor)
@@ -67,33 +77,21 @@ namespace UniversityAffairs.Controllers
             return View(instructor);
         }
 
-        // GET: Instructor/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
+            if (id == null) return NotFound();
 
             var instructor = await _context.Instructors.FindAsync(id);
-            if (instructor == null)
-            {
-                return NotFound();
-            }
+            if (instructor == null) return NotFound();
+
             return View(instructor);
         }
 
-        // POST: Instructor/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("Id,FullName,Title,Email")] Instructor instructor)
         {
-            if (id != instructor.Id)
-            {
-                return NotFound();
-            }
+            if (id != instructor.Id) return NotFound();
 
             if (ModelState.IsValid)
             {
@@ -104,39 +102,24 @@ namespace UniversityAffairs.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!InstructorExists(instructor.Id))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
+                    if (!InstructorExists(instructor.Id)) return NotFound();
+                    else throw;
                 }
                 return RedirectToAction(nameof(Index));
             }
             return View(instructor);
         }
 
-        // GET: Instructor/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
+            if (id == null) return NotFound();
 
-            var instructor = await _context.Instructors
-                .FirstOrDefaultAsync(m => m.Id == id);
-            if (instructor == null)
-            {
-                return NotFound();
-            }
+            var instructor = await _context.Instructors.FirstOrDefaultAsync(m => m.Id == id);
+            if (instructor == null) return NotFound();
 
             return View(instructor);
         }
 
-        // POST: Instructor/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
@@ -145,9 +128,8 @@ namespace UniversityAffairs.Controllers
             if (instructor != null)
             {
                 _context.Instructors.Remove(instructor);
+                await _context.SaveChangesAsync();
             }
-
-            await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 

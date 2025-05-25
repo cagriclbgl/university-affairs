@@ -17,6 +17,7 @@ namespace UniversityAffairs.Data
         public DbSet<LessonSchedule> LessonSchedules { get; set; }
         public DbSet<Grade> Grades { get; set; }
         public DbSet<Term> Terms { get; set; }
+        public DbSet<ExamSchedule> ExamSchedules { get; set; }
     }
 }
  

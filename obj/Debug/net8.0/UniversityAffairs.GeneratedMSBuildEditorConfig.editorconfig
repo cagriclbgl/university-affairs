@@ -60,6 +60,22 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xhc3Nyb29tXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Cagri/source/repos/UniversityAffairs/Views/ExamSchedule/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhhbVNjaGVkdWxlXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Cagri/source/repos/UniversityAffairs/Views/ExamSchedule/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhhbVNjaGVkdWxlXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Cagri/source/repos/UniversityAffairs/Views/ExamSchedule/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhhbVNjaGVkdWxlXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Cagri/source/repos/UniversityAffairs/Views/ExamSchedule/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhhbVNjaGVkdWxlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Cagri/source/repos/UniversityAffairs/Views/Home/Entry.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFbnRyeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -70,6 +86,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Cagri/source/repos/UniversityAffairs/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Cagri/source/repos/UniversityAffairs/Views/InstructorSchedule/MySchedule.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdHJ1Y3RvclNjaGVkdWxlXE15U2NoZWR1bGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Cagri/source/repos/UniversityAffairs/Views/Instructor/Create.cshtml]
@@ -90,6 +110,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Cagri/source/repos/UniversityAffairs/Views/Instructor/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdHJ1Y3RvclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Cagri/source/repos/UniversityAffairs/Views/Instructor/MyExams.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdHJ1Y3RvclxNeUV4YW1zLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Cagri/source/repos/UniversityAffairs/Views/LessonSchedule/Create.cshtml]

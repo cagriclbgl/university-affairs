@@ -1,0 +1,70 @@
+﻿@model UniversityAffairs.Models.ExamSchedule
+@{
+    ViewData["Title"] = "Create Exam";
+}
+<h2>Create Exam</h2>
+
+@Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label asp-for="LessonId"></label>
+        <select asp-for="LessonId" asp-items="ViewBag.LessonId" class="form-control">
+            <option value="">-- Ders Seçin --</option>
+        </select>
+        <span asp-validation-for="LessonId" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="InstructorId"></label>
+        <select asp-for="InstructorId" asp-items="ViewBag.InstructorId" class="form-control">
+            <option value="">-- Öğretim Elemanı Seçin --</option>
+        </select>
+        <span asp-validation-for="InstructorId" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="ClassroomId"></label>
+        <select asp-for="ClassroomId" asp-items="ViewBag.ClassroomId" class="form-control">
+            <option value="">-- Sınıf Seçin --</option>
+        </select>
+        <span asp-validation-for="ClassroomId" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="GradeId"></label>
+        <select asp-for="GradeId" asp-items="ViewBag.GradeId" class="form-control">
+            <option value="">-- Sınıf Düzeyi Seçin --</option>
+        </select>
+        <span asp-validation-for="GradeId" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="TermId"></label>
+        <select asp-for="TermId" asp-items="ViewBag.TermId" class="form-control">
+            <option value="">-- Dönem Seçin --</option>
+        </select>
+        <span asp-validation-for="TermId" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="ExamDate"></label>
+        <input asp-for="ExamDate" type="date" class="form-control" />
+        <span asp-validation-for="ExamDate" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="StartTime"></label>
+        <input asp-for="StartTime" type="time" class="form-control" />
+        <span asp-validation-for="StartTime" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="EndTime"></label>
+        <input asp-for="EndTime" type="time" class="form-control" />
+        <span asp-validation-for="EndTime" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-success">Kaydet</button>
+    <a asp-action="Index" class="btn btn-secondary ml-2">Listeye Dön</a>
+</form>

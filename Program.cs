@@ -1,7 +1,11 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using UniversityAffairs.Data;
+
 using UniversityAffairs.Models;
+using DinkToPdf;
+using DinkToPdf.Contracts;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,7 +25,13 @@ builder.Services.ConfigureApplicationCookie(options =>
     options.AccessDeniedPath = "/Account/AccessDenied";
 });
 
+// DinkToPdf PDF converter servisi
+builder.Services.AddSingleton(typeof(IConverter), new SynchronizedConverter(new PdfTools()));
+
 builder.Services.AddControllersWithViews();
+
+System.Runtime.InteropServices.NativeLibrary.Load(
+    Path.Combine(Directory.GetCurrentDirectory(), "DinkToPdf", "libwkhtmltox.dll"));
 
 var app = builder.Build();
 
