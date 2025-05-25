@@ -1,0 +1,39 @@
+﻿@model List<UniversityAffairs.Models.SeatingPlan>
+
+@{
+    ViewData["Title"] = "Sınav Oturma Planı";
+    var rows = 10;
+    var cols = 11;
+}
+
+<h2 class="text-center my-4">Sınav Oturma Planı (Amfi - 4-3-4)</h2>
+
+<table class="table table-bordered text-center">
+    <thead>
+        <tr>
+            @for (int col = 0; col < cols; col++)
+            {
+                <th>@col</th>
+            }
+        </tr>
+    </thead>
+    <tbody>
+        @for (int row = 0; row < rows; row++)
+        {
+            <tr>
+                @for (int col = 0; col < cols; col++)
+                {
+                    var seat = Model.FirstOrDefault(s => s.Row == row && s.Column == col);
+                    if (seat != null)
+                    {
+                        <td class="bg-success text-white">@seat.StudentNumber</td>
+                    }
+                    else
+                    {
+                        <td class="bg-light text-muted">Boş</td>
+                    }
+                }
+            </tr>
+        }
+    </tbody>
+</table>

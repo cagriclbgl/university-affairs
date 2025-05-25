@@ -3,6 +3,34 @@
   "WorkspaceRootPath": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|c:\\users\\cagri\\source\\repos\\universityaffairs\\services\\seatingplanservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|solutionrelative:services\\seatingplanservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|c:\\users\\cagri\\source\\repos\\universityaffairs\\controllers\\seatingplancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|solutionrelative:controllers\\seatingplancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|c:\\users\\cagri\\source\\repos\\universityaffairs\\views\\seatingplan\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|solutionrelative:views\\seatingplan\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|c:\\users\\cagri\\source\\repos\\universityaffairs\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Migrations\\20250525143938_AddSeatingPlan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20250525143938_AddSeatingPlan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|c:\\users\\cagri\\source\\repos\\universityaffairs\\data\\universitydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|solutionrelative:data\\universitydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|c:\\users\\cagri\\source\\repos\\universityaffairs\\models\\seatingplan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|solutionrelative:models\\seatingplan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|c:\\users\\cagri\\source\\repos\\universityaffairs\\models\\examschedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|solutionrelative:models\\examschedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -34,7 +62,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -43,6 +71,97 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Views\\SeatingPlan\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\SeatingPlan\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Views\\SeatingPlan\\Index.cshtml",
+              "RelativeToolTip": "Views\\SeatingPlan\\Index.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-25T14:44:16.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-25T14:43:12.939Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SeatingPlanController.cs",
+              "DocumentMoniker": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Controllers\\SeatingPlanController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SeatingPlanController.cs",
+              "ToolTip": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Controllers\\SeatingPlanController.cs",
+              "RelativeToolTip": "Controllers\\SeatingPlanController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-25T14:42:54.136Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SeatingPlanService.cs",
+              "DocumentMoniker": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Services\\SeatingPlanService.cs",
+              "RelativeDocumentMoniker": "Services\\SeatingPlanService.cs",
+              "ToolTip": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Services\\SeatingPlanService.cs",
+              "RelativeToolTip": "Services\\SeatingPlanService.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAiwCcAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-25T14:41:55.929Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "20250525143938_AddSeatingPlan.cs",
+              "DocumentMoniker": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Migrations\\20250525143938_AddSeatingPlan.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250525143938_AddSeatingPlan.cs",
+              "ToolTip": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Migrations\\20250525143938_AddSeatingPlan.cs",
+              "RelativeToolTip": "Migrations\\20250525143938_AddSeatingPlan.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-25T14:39:39.164Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UniversityDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Data\\UniversityDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\UniversityDbContext.cs",
+              "ToolTip": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Data\\UniversityDbContext.cs",
+              "RelativeToolTip": "Data\\UniversityDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-25T14:39:15.005Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SeatingPlan.cs",
+              "DocumentMoniker": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Models\\SeatingPlan.cs",
+              "RelativeDocumentMoniker": "Models\\SeatingPlan.cs",
+              "ToolTip": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Models\\SeatingPlan.cs",
+              "RelativeToolTip": "Models\\SeatingPlan.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-25T14:38:10.608Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
@@ -50,12 +169,11 @@
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAABkAAAAAAAAAAAAqwEAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-25T11:47:01.608Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-25T11:47:01.608Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 10,
               "Title": "MyExams.cshtml",
               "DocumentMoniker": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Views\\Instructor\\MyExams.cshtml",
               "RelativeDocumentMoniker": "Views\\Instructor\\MyExams.cshtml",
@@ -63,12 +181,11 @@
               "RelativeToolTip": "Views\\Instructor\\MyExams.cshtml",
               "ViewState": "AgIAAAYAAAAAAAAAAAAmwCoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-25T11:46:32.842Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-25T11:46:32.842Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
               "Title": "InstructorController.cs",
               "DocumentMoniker": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Controllers\\InstructorController.cs",
               "RelativeDocumentMoniker": "Controllers\\InstructorController.cs",
@@ -76,12 +193,11 @@
               "RelativeToolTip": "Controllers\\InstructorController.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAABoAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T11:42:21.715Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-25T11:42:21.715Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 11,
               "Title": "ExamScheduleController.cs",
               "DocumentMoniker": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Controllers\\ExamScheduleController.cs",
               "RelativeDocumentMoniker": "Controllers\\ExamScheduleController.cs",
@@ -89,25 +205,24 @@
               "RelativeToolTip": "Controllers\\ExamScheduleController.cs",
               "ViewState": "AgIAABgAAAAAAAAAAAAlwCcAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T16:18:54.914Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-22T16:18:54.914Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
               "Title": "ExamSchedule.cs",
               "DocumentMoniker": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Models\\ExamSchedule.cs",
               "RelativeDocumentMoniker": "Models\\ExamSchedule.cs",
               "ToolTip": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Models\\ExamSchedule.cs",
               "RelativeToolTip": "Models\\ExamSchedule.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAAwDwAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAA9wDwAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-22T16:31:47.676Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 12,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Views\\ExamSchedule\\Create.cshtml",
               "RelativeDocumentMoniker": "Views\\ExamSchedule\\Create.cshtml",

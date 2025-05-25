@@ -5,6 +5,7 @@ using UniversityAffairs.Data;
 using UniversityAffairs.Models;
 using DinkToPdf;
 using DinkToPdf.Contracts;
+using UniversityAffairs.Services;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -29,6 +30,8 @@ builder.Services.ConfigureApplicationCookie(options =>
 builder.Services.AddSingleton(typeof(IConverter), new SynchronizedConverter(new PdfTools()));
 
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddScoped<SeatingPlanService>();
 
 System.Runtime.InteropServices.NativeLibrary.Load(
     Path.Combine(Directory.GetCurrentDirectory(), "DinkToPdf", "libwkhtmltox.dll"));
