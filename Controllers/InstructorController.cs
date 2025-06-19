@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using UniversityAffairs.Data;
 using UniversityAffairs.Models;
 
@@ -24,7 +21,41 @@ namespace UniversityAffairs.Controllers
             _userManager = userManager;
         }
 
-        
+        // 🟦 Öğretim Elemanı Paneli
+        [Authorize(Roles = "Instructor,DepartmentHead")]
+        public IActionResult Index()
+        {
+            return View();
+        }
+
+        // 🟪 Haftalık Ders Programı
+        [Authorize(Roles = "Instructor,DepartmentHead")]
+        public async Task<IActionResult> WeeklySchedule()
+        {
+            var user = await _userManager.GetUserAsync(User);
+
+            // Instructor tablosundaki kullanıcıya karşılık gelen InstructorId'yi bul
+            var instructor = await _context.Instructors.FirstOrDefaultAsync(i => i.Email == user.Email);
+
+            if (instructor == null)
+            {
+                return NotFound("Instructor kaydı bulunamadı.");
+            }
+
+            // InstructorId ile filtrele
+            var schedules = await _context.LessonSchedules
+                .Include(s => s.Lesson)
+                .Include(s => s.Classroom)
+                .Include(s => s.Grade)
+                .Include(s => s.Term)
+                .Where(s => s.InstructorId == instructor.Id)
+                .ToListAsync();
+
+            return View("~/Views/LessonSchedule/WeeklySchedule.cshtml", schedules);
+        }
+
+
+        // 🟨 Sınavlarım
         [Authorize(Roles = "Instructor,DepartmentHead")]
         public async Task<IActionResult> MyExams()
         {
@@ -42,12 +73,7 @@ namespace UniversityAffairs.Controllers
             return View(exams);
         }
 
-        // Aşağıdaki mevcut tüm CRUD işlemlerin aynen bırakıldı
-
-        public async Task<IActionResult> Index()
-        {
-            return View(await _context.Instructors.ToListAsync());
-        }
+        // 🔧 CRUD işlemleri
 
         public async Task<IActionResult> Details(int? id)
         {
@@ -68,14 +94,18 @@ namespace UniversityAffairs.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,FullName,Title,Email")] Instructor instructor)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
-                _context.Add(instructor);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                Console.WriteLine("Model geçersiz!");
+                return View(instructor);
             }
-            return View(instructor);
+
+            Console.WriteLine("Model geçerli, kayıt ekleniyor...");
+            _context.Add(instructor);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
         }
+
 
         public async Task<IActionResult> Edit(int? id)
         {
@@ -102,7 +132,7 @@ namespace UniversityAffairs.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!InstructorExists(instructor.Id)) return NotFound();
+                    if (!_context.Instructors.Any(e => e.Id == instructor.Id)) return NotFound();
                     else throw;
                 }
                 return RedirectToAction(nameof(Index));
@@ -131,11 +161,6 @@ namespace UniversityAffairs.Controllers
                 await _context.SaveChangesAsync();
             }
             return RedirectToAction(nameof(Index));
-        }
-
-        private bool InstructorExists(int id)
-        {
-            return _context.Instructors.Any(e => e.Id == id);
         }
     }
 }

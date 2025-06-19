@@ -26,18 +26,39 @@ namespace UniversityAffairs.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create(string fullName, string username, string password, string role)
+        public async Task<IActionResult> Create(string fullName, string username, string email, string password, string role)
         {
             var user = new ApplicationUser
             {
                 UserName = username,
-                FullName = fullName
+                FullName = fullName,
+                Email = email,
+                EmailConfirmed = true
             };
 
             var result = await _userManager.CreateAsync(user, password);
             if (result.Succeeded)
             {
                 await _userManager.AddToRoleAsync(user, role);
+
+                // Instructor rolündeyse Instructors tablosuna da ekle
+                if (role == "Instructor")
+                {
+                    var instructor = new Instructor
+                    {
+                        FullName = fullName,
+                        Email = email,
+                        Title = "Dr." // İstersen burayı formdan da alabilirsin
+                    };
+
+                    using (var scope = HttpContext.RequestServices.CreateScope())
+                    {
+                        var dbContext = scope.ServiceProvider.GetRequiredService<UniversityAffairs.Data.UniversityDbContext>();
+                        dbContext.Instructors.Add(instructor);
+                        await dbContext.SaveChangesAsync();
+                    }
+                }
+
                 ViewBag.Success = "Kullanıcı başarıyla oluşturuldu.";
             }
             else
@@ -48,5 +69,6 @@ namespace UniversityAffairs.Controllers
             ViewBag.Roles = new[] { "Instructor", "Secretary", "DepartmentHead" };
             return View();
         }
+
     }
 }
