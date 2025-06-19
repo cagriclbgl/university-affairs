@@ -1,0 +1,45 @@
+﻿@model IEnumerable<UniversityAffairs.Models.SeatingPlan>
+
+@{
+    ViewData["Title"] = "My Seating Plans";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container py-5">
+    <h2 class="admin-title">🪑 My Seating Plans</h2>
+
+    @if (!Model.Any())
+    {
+        <div class="alert alert-info text-center">
+            You don't have any seating plans yet.
+        </div>
+    }
+    else
+    {
+        <div class="table-responsive mt-4">
+            <table class="table table-bordered table-hover text-center align-middle shadow-sm">
+                <thead class="table-primary">
+                    <tr>
+                        <th>Exam</th>
+                        <th>Student No</th>
+                        <th>Row</th>
+                        <th>Column</th>
+                        <th>Block</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var plan in Model)
+                    {
+                        <tr>
+                            <td>@plan.ExamSchedule?.Lesson?.LessonName</td>
+                            <td>@plan.StudentNumber</td>
+                            <td>@plan.Row</td>
+                            <td>@plan.Column</td>
+                            <td>@plan.Block</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+</div>

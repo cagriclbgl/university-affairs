@@ -74,6 +74,31 @@ namespace UniversityAffairs.Controllers
             return View(exams);
         }
 
+        [Authorize(Roles = "Instructor,DepartmentHead")]
+        public async Task<IActionResult> MySeatingPlans()
+        {
+            var user = await _userManager.GetUserAsync(User);
+
+            var instructor = await _context.Instructors
+                .FirstOrDefaultAsync(i => i.Email == user.Email);
+
+            if (instructor == null)
+            {
+                return NotFound("Instructor kaydı bulunamadı.");
+            }
+
+            var plans = await _context.SeatingPlans
+                .Include(p => p.ExamSchedule)
+                    .ThenInclude(e => e.Lesson)
+                .Include(p => p.ExamSchedule)
+                    .ThenInclude(e => e.Instructor)
+                .Where(p => p.ExamSchedule.InstructorId == instructor.Id)
+                .ToListAsync();
+
+            return View("~/Views/SeatingPlan/MyPlans.cshtml", plans);
+        }
+
+
         // 🔧 CRUD işlemleri
 
         public async Task<IActionResult> Details(int? id)

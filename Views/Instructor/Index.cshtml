@@ -6,8 +6,17 @@
 <div class="container py-5">
     <h2 class="admin-title">👨‍🏫 Instructor Panel</h2>
 
-    <div class="admin-menu">
-        <a asp-action="WeeklySchedule" class="admin-card">📅 My Weekly Schedule</a>
-        <a asp-action="MyExams" class="admin-card">📝 My Exams</a>
+    <div class="admin-menu mt-4">
+        <a asp-action="WeeklySchedule" class="admin-card">
+            📅 My Weekly Schedule
+        </a>
+
+        <a asp-action="MyExams" class="admin-card">
+            📝 My Exams
+        </a>
+
+        <a asp-controller="SeatingPlan" asp-action="MySeatingPlans" class="admin-card">
+            🪑 My Seating Plans
+        </a>
     </div>
 </div>

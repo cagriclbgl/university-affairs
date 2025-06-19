@@ -1,44 +1,60 @@
 ﻿@model IEnumerable<UniversityAffairs.Models.ExamSchedule>
+
 @{
     ViewData["Title"] = "Exam Schedule";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<h2>Exam Schedule</h2>
 
-<p>
-    <a asp-action="Create" class="btn btn-primary">Add New Exam</a>
-</p>
+<div class="container py-5">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="admin-title">📝 Exam Schedule</h2>
+        <a asp-action="Create" class="btn btn-success btn-lg">➕ Add New Exam</a>
+    </div>
 
-<table class="table table-bordered">
-    <thead>
-        <tr>
-            <th>Lesson</th>
-            <th>Instructor</th>
-            <th>Classroom</th>
-            <th>Date</th>
-            <th>Start</th>
-            <th>End</th>
-            <th>Grade</th>
-            <th>Term</th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
-            <tr>
-                <td>@item.Lesson.LessonName</td>
-                <td>@item.Instructor.FullName</td>
-                <td>@item.Classroom.RoomName</td>
-                <td>@item.ExamDate.ToShortDateString()</td>
-                <td>@item.StartTime</td>
-                <td>@item.EndTime</td>
-                <td>@item.Grade.Name</td>
-                <td>@item.Term.Name</td>
-                <td>
-                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-                </td>
-            </tr>
-        }
-    </tbody>
-</table>
+    @if (!Model.Any())
+    {
+        <div class="alert alert-warning text-center">
+            No exams found. Please add an exam.
+        </div>
+    }
+    else
+    {
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover text-center align-middle shadow-sm">
+                <thead class="table-primary">
+                    <tr>
+                        <th>Lesson</th>
+                        <th>Instructor</th>
+                        <th>Classroom</th>
+                        <th>Date</th>
+                        <th>Start</th>
+                        <th>End</th>
+                        <th>Grade</th>
+                        <th>Term</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.Lesson?.LessonName</td>
+                            <td>@item.Instructor?.FullName</td>
+                            <td>@item.Classroom?.RoomName</td>
+                            <td>@item.ExamDate.ToShortDateString()</td>
+                            <td>@item.StartTime.ToString(@"hh\:mm")</td>
+                            <td>@item.EndTime.ToString(@"hh\:mm")</td>
+                            <td>@item.Grade?.Name</td>
+                            <td>@item.Term?.Name</td>
+                            <td class="d-flex gap-2 justify-content-center flex-wrap">
+                                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-outline-warning">✏️ Edit</a>
+                                <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-outline-danger">🗑️ Delete</a>
+                                <a asp-controller="SeatingPlan" asp-action="Generate" asp-route-examScheduleId="@item.Id" class="btn btn-sm btn-outline-primary">🪑 Oturma Planı</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+</div>

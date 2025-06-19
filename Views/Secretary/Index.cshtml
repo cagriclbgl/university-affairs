@@ -1,12 +1,19 @@
 ﻿@{
-    ViewData["Title"] = "Sekreter Paneli";
+    ViewData["Title"] = "Secretary Panel";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Merhaba, @User.Identity.Name</h2>
+<div class="container py-5">
+    <h2 class="admin-title">🗂️ Secretary Panel</h2>
 
-<ul>
-    <li><a href="/Lesson/Index">📘 Dersleri Yönet</a></li>
-    <li><a href="/Classroom/Index">🏫 Sınıfları Yönet</a></li>
-    <li><a href="/LessonSchedule/Index">📅 Ders Programı</a></li>
-    <li><a href="/ExamSchedule/Index">📝 Sınav Programı</a></li>
-</ul>
+    <p class="mb-4 text-muted">Merhaba, <strong>@User.Identity.Name</strong></p>
+
+    <div class="admin-menu">
+        <a href="/Lesson/Index" class="admin-card">📘 Manage Lessons</a>
+        <a href="/Classroom/Index" class="admin-card">🏫 Manage Classrooms</a>
+        <a href="/LessonSchedule/Index" class="admin-card">📅 Lesson Scheduling</a>
+        <a href="/ExamSchedule/Index" class="admin-card">📝 Exam Scheduling</a>
+        <a href="/SeatingPlan/Manage" class="admin-card">🪑 Seating Plans</a>
+        <a href="/UserManagement/Create" class="admin-card">👥 Create User</a>
+    </div>
+</div>

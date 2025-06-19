@@ -1,0 +1,70 @@
+﻿@model IEnumerable<UniversityAffairs.Models.SeatingPlan>
+
+@{
+    ViewData["Title"] = "Manage Seating Plans";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var exams = ViewBag.Exams as List<UniversityAffairs.Models.ExamSchedule>;
+}
+
+<div class="container py-5">
+    <h2 class="admin-title">🪑 Manage Seating Plans by Exam</h2>
+
+    <!-- 🔍 Sınav Seçimi Formu -->
+    <form asp-action="Manage" method="post" class="mb-4 d-flex gap-2 align-items-center">
+        <select name="examScheduleId" class="form-select w-auto" required>
+            <option value="">-- Select Exam --</option>
+            @foreach (var exam in exams)
+            {
+                <option value="@exam.Id">@exam.Lesson?.LessonName - @exam.ExamDate.ToShortDateString()</option>
+            }
+        </select>
+        <button type="submit" class="btn btn-primary fw-bold">
+            🔎 Show Seating Plans
+        </button>
+    </form>
+
+    @if (Model != null && Model.Any())
+    {
+        <form asp-action="DeleteAll" asp-controller="SeatingPlan" method="post" class="mb-4 d-flex gap-2 align-items-center"
+              onsubmit="return confirm('Bu sınav için oluşturulmuş tüm oturma planlarını silmek istediğinize emin misiniz?');">
+            <input type="hidden" name="examScheduleId" value="@Model.First().ExamScheduleId" />
+            <button type="submit" class="btn btn-danger fw-bold">
+                🗑️ Oturma Planını Sil
+            </button>
+        </form>
+
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover text-center align-middle shadow-sm">
+                <thead class="table-primary">
+                    <tr>
+                        <th>Exam</th>
+                        <th>Instructor</th>
+                        <th>Student No</th>
+                        <th>Row</th>
+                        <th>Column</th>
+                        <th>Block</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var plan in Model)
+                    {
+                        <tr>
+                            <td>@plan.ExamSchedule?.Lesson?.LessonName</td>
+                            <td>@plan.ExamSchedule?.Instructor?.FullName</td>
+                            <td>@plan.StudentNumber</td>
+                            <td>@plan.Row</td>
+                            <td>@plan.Column</td>
+                            <td>@plan.Block</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+    else if (Model != null)
+    {
+        <div class="alert alert-warning text-center">
+            No seating plans found for the selected exam.
+        </div>
+    }
+</div>

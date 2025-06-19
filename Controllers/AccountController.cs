@@ -40,7 +40,7 @@ namespace UniversityAffairs.Controllers
                         return RedirectToAction("Index", "Secretary");
 
                     if (roles.Contains("Instructor"))
-                        return RedirectToAction("WeeklySchedule", "Instructor");
+                        return RedirectToAction("Index", "Instructor");
 
                     // Varsayılan fallback
                     return RedirectToAction("Index", "Home");
