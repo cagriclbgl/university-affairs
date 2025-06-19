@@ -25,25 +25,32 @@ namespace UniversityAffairs.Controllers
         [HttpPost]
         public async Task<IActionResult> Login(string username, string password)
         {
-            var result = await _signInManager.PasswordSignInAsync(username, password, false, false);
-            if (result.Succeeded)
+            var user = await _userManager.FindByNameAsync(username);
+            if (user != null)
             {
-                var user = await _userManager.FindByNameAsync(username);
-                var roles = await _userManager.GetRolesAsync(user);
-                var role = roles.FirstOrDefault();
-
-                return role switch
+                var result = await _signInManager.PasswordSignInAsync(user, password, false, false);
+                if (result.Succeeded)
                 {
-                    "DepartmentHead" => RedirectToAction("Index", "Admin"),
-                    "Secretary" => RedirectToAction("Index", "Secretary"),
-                    "Instructor" => RedirectToAction("MySchedule", "InstructorSchedule"), // ← BURASI
-                    _ => RedirectToAction("Login")
-                };
+                    var roles = await _userManager.GetRolesAsync(user);
+
+                    if (roles.Contains("DepartmentHead"))
+                        return RedirectToAction("Panel", "Admin");
+
+                    if (roles.Contains("Secretary"))
+                        return RedirectToAction("Index", "Secretary");
+
+                    if (roles.Contains("Instructor"))
+                        return RedirectToAction("WeeklySchedule", "Instructor");
+
+                    // Varsayılan fallback
+                    return RedirectToAction("Index", "Home");
+                }
             }
 
-            ViewBag.ErrorMessage = "Invalid login attempt.";
+            ViewBag.Error = "Geçersiz kullanıcı adı veya şifre.";
             return View();
         }
+
 
 
 
@@ -76,7 +83,7 @@ namespace UniversityAffairs.Controllers
         public async Task<IActionResult> Logout()
         {
             await _signInManager.SignOutAsync();
-            return RedirectToAction("Login");
+            return RedirectToAction("Login", "Account");
         }
 
         public IActionResult AccessDenied()

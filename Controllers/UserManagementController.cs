@@ -6,7 +6,7 @@ using UniversityAffairs.Models;
 
 namespace UniversityAffairs.Controllers
 {
-    [Authorize(Roles = "DepartmentHead")]
+    [Authorize(Roles = "DepartmentHead,Secretary")]
     public class UserManagementController : Controller
     {
         private readonly UserManager<ApplicationUser> _userManager;

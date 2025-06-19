@@ -1,11 +1,13 @@
 ﻿@{
-    ViewData["Title"] = "Öğretim Elemanı Paneli";
+    ViewData["Title"] = "Instructor Panel";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>📘 Öğretim Elemanı Paneli</h2>
-<p>Hoş geldiniz, @User.Identity.Name</p>
+<div class="container py-5">
+    <h2 class="admin-title">👨‍🏫 Instructor Panel</h2>
 
-<ul>
-    <li><a href="/Instructor/WeeklySchedule">📅 Haftalık Ders Programım</a></li>
-    <li><a href="/Instructor/MyExams">📝 Sınavlarım</a></li>
-</ul>
+    <div class="admin-menu">
+        <a asp-action="WeeklySchedule" class="admin-card">📅 My Weekly Schedule</a>
+        <a asp-action="MyExams" class="admin-card">📝 My Exams</a>
+    </div>
+</div>

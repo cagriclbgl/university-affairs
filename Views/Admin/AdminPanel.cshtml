@@ -3,70 +3,38 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<style>
-    .admin-container {
-        min-height: 80vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background: linear-gradient(135deg, #fdfbfb, #ebedee);
-        padding: 2rem;
-    }
-
-    .admin-title {
-        font-size: 2.5rem;
-        font-weight: bold;
-        margin-bottom: 2rem;
-        color: #2c3e50;
-    }
-
-    .admin-menu {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-        gap: 1.5rem;
-        width: 100%;
-        max-width: 900px;
-    }
-
-    .admin-card {
-        background-color: white;
-        border-radius: 10px;
-        padding: 1.5rem;
-        box-shadow: 0 0 10px rgba(0,0,0,0.08);
-        text-align: center;
-        transition: 0.3s ease;
-        text-decoration: none;
-        color: #333;
-        font-size: 1.1rem;
-        font-weight: 500;
-    }
-
-        .admin-card:hover {
-            transform: scale(1.05);
-            background-color: #e8f0fe;
-        }
-
-    .back-button {
-        align-self: flex-start;
-        margin-bottom: 1rem;
-    }
-</style>
-
 <div class="admin-container">
+
     <!-- 🔙 Geri Butonu -->
     <div class="back-button">
-        <a asp-controller="Home" asp-action="Index" class="btn btn-secondary fw-bold px-4 py-2">
+        <a href="#" onclick="confirmLogout(event)" class="btn btn-outline-secondary fw-bold px-4 py-2">
             ← Back to Entry Page
         </a>
+
     </div>
 
-    <div class="admin-title">Admin Control Panel</div>
+    <div class="admin-title">🎓 Bölüm Başkanı Paneli</div>
 
     <div class="admin-menu">
+        <a asp-controller="UserManagement" asp-action="Create" class="admin-card">👥 Manage Users</a>
         <a asp-controller="Lesson" asp-action="Index" class="admin-card">📘 Manage Lessons</a>
-        <a asp-controller="Instructor" asp-action="Index" class="admin-card">👨‍🏫 Manage Instructors</a>
+        <a asp-controller="Instructor" asp-action="ListAll" class="admin-card">👨‍🏫 Manage Instructors</a>
         <a asp-controller="Classroom" asp-action="Index" class="admin-card">🏫 Manage Classrooms</a>
         <a asp-controller="LessonSchedule" asp-action="Index" class="admin-card">🗓️ Manage Lesson Schedules</a>
+        <a asp-controller="ExamSchedule" asp-action="Index" class="admin-card">📝 Manage Exam Schedules</a>
+        <a asp-controller="Grade" asp-action="Index" class="admin-card">🎓 Manage Grades & Terms</a>
+        <a asp-controller="Instructor" asp-action="WeeklySchedule" class="admin-card">📅 Instructor Weekly Schedule</a>
     </div>
+
 </div>
+
+@section Scripts {
+    <script>
+        function confirmLogout(event) {
+            event.preventDefault();
+            if (confirm("Çıkış yapmak istediğinize emin misiniz?")) {
+                window.location.href = "/Account/Login";
+            }
+        }
+    </script>
+}

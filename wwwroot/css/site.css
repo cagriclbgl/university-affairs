@@ -1,22 +1,131 @@
-html {
-  font-size: 14px;
-}
-
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
-html {
-  position: relative;
-  min-height: 100%;
-}
-
+/* ===============================
+   GENEL SAYFA TASARIMI
+================================== */
 body {
-  margin-bottom: 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f7f9fc;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* ===============================
+   GENEL BAÞLIKLAR
+================================== */
+h1, h2, h3 {
+    color: #2c3e50;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+/* ===============================
+   BUTONLAR
+================================== */
+button, .btn {
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+}
+
+    .btn-primary:hover {
+        background-color: #0056b3;
+    }
+
+.btn-danger {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+    .btn-danger:hover {
+        background-color: #a71d2a;
+    }
+
+.btn-outline-secondary {
+    border: 1px solid #6c757d;
+    background-color: transparent;
+    color: #6c757d;
+}
+
+    .btn-outline-secondary:hover {
+        background-color: #6c757d;
+        color: #fff;
+    }
+
+/* ===============================
+   TABLO STÝLLERÝ
+================================== */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+
+    .table th,
+    .table td {
+        border: 1px solid #dee2e6;
+        padding: 0.75rem;
+        text-align: center;
+    }
+
+    .table th {
+        background-color: #e9ecef;
+        font-weight: bold;
+    }
+
+/* ===============================
+   FORM STÝLLERÝ
+================================== */
+input, select, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+/* ===============================
+   PANEL VE KART TASARIMI
+================================== */
+.admin-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.08);
+    text-align: center;
+    transition: 0.3s ease;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+    .admin-card:hover {
+        transform: scale(1.05);
+        background-color: #e8f0fe;
+    }
+
+.admin-menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.admin-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #2c3e50;
 }

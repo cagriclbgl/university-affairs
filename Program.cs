@@ -57,7 +57,7 @@ app.UseAuthorization();
 // ⭐ Varsayılan rota
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Entry}/{id?}");
+    pattern: "{controller=Account}/{action=Login}/{id?}");
 
 // ⭐ Rolleri otomatik ekleyen fonksiyon
 async Task SeedRoles(IServiceProvider serviceProvider)

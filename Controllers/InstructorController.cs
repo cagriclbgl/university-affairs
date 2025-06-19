@@ -25,11 +25,12 @@ namespace UniversityAffairs.Controllers
         [Authorize(Roles = "Instructor,DepartmentHead")]
         public IActionResult Index()
         {
-            return View();
+            return View(); // Artık Instructor Panel sayfasını döndürüyoruz
         }
 
+
         // 🟪 Haftalık Ders Programı
-        [Authorize(Roles = "Instructor,DepartmentHead")]
+        [Authorize(Roles = "Instructor,DepartmentHead,Secretary")]
         public async Task<IActionResult> WeeklySchedule()
         {
             var user = await _userManager.GetUserAsync(User);
@@ -149,6 +150,14 @@ namespace UniversityAffairs.Controllers
 
             return View(instructor);
         }
+
+        [Authorize(Roles = "DepartmentHead,Secretary")]
+        public async Task<IActionResult> ListAll()
+        {
+            var instructors = await _context.Instructors.ToListAsync();
+            return View("Manage", instructors); // yeni View: Views/Instructor/Manage.cshtml
+        }
+
 
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]

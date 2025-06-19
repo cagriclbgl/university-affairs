@@ -3,28 +3,96 @@
   "WorkspaceRootPath": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|c:\\users\\cagri\\source\\repos\\universityaffairs\\views\\usermanagement\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|solutionrelative:views\\usermanagement\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|c:\\users\\cagri\\source\\repos\\universityaffairs\\views\\admin\\adminpanel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|solutionrelative:views\\admin\\adminpanel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|c:\\users\\cagri\\source\\repos\\universityaffairs\\controllers\\usermanagementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|solutionrelative:controllers\\usermanagementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|c:\\users\\cagri\\source\\repos\\universityaffairs\\controllers\\seatingplancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|solutionrelative:controllers\\seatingplancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|c:\\users\\cagri\\source\\repos\\universityaffairs\\controllers\\secretarycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|solutionrelative:controllers\\secretarycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|c:\\users\\cagri\\source\\repos\\universityaffairs\\controllers\\examschedulecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|solutionrelative:controllers\\examschedulecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|c:\\users\\cagri\\source\\repos\\universityaffairs\\controllers\\instructorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|solutionrelative:controllers\\instructorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|c:\\users\\cagri\\source\\repos\\universityaffairs\\views\\instructor\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|solutionrelative:views\\instructor\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|c:\\users\\cagri\\source\\repos\\universityaffairs\\controllers\\usermanagementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|solutionrelative:controllers\\usermanagementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|c:\\users\\cagri\\source\\repos\\universityaffairs\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|c:\\users\\cagri\\source\\repos\\universityaffairs\\views\\instructor\\manage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|solutionrelative:views\\instructor\\manage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|c:\\users\\cagri\\source\\repos\\universityaffairs\\views\\usermanagement\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|solutionrelative:views\\usermanagement\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|c:\\users\\cagri\\source\\repos\\universityaffairs\\views\\instructor\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|solutionrelative:views\\instructor\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|c:\\users\\cagri\\source\\repos\\universityaffairs\\views\\instructor\\myexams.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|solutionrelative:views\\instructor\\myexams.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|c:\\users\\cagri\\source\\repos\\universityaffairs\\views\\instructor\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|solutionrelative:views\\instructor\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|c:\\users\\cagri\\source\\repos\\universityaffairs\\views\\instructor\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|solutionrelative:views\\instructor\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|c:\\users\\cagri\\source\\repos\\universityaffairs\\views\\instructor\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|solutionrelative:views\\instructor\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|c:\\users\\cagri\\source\\repos\\universityaffairs\\views\\instructor\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|solutionrelative:views\\instructor\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|c:\\users\\cagri\\source\\repos\\universityaffairs\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|c:\\users\\cagri\\source\\repos\\universityaffairs\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|c:\\users\\cagri\\source\\repos\\universityaffairs\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|c:\\users\\cagri\\source\\repos\\universityaffairs\\controllers\\lessoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|solutionrelative:controllers\\lessoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|c:\\users\\cagri\\source\\repos\\universityaffairs\\controllers\\instructorschedulecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|solutionrelative:controllers\\instructorschedulecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|c:\\users\\cagri\\source\\repos\\universityaffairs\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|solutionrelative:views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|c:\\users\\cagri\\source\\repos\\universityaffairs\\views\\account\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|solutionrelative:views\\account\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|c:\\users\\cagri\\source\\repos\\universityaffairs\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|c:\\users\\cagri\\source\\repos\\universityaffairs\\controllers\\secretarycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|solutionrelative:controllers\\secretarycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|c:\\users\\cagri\\source\\repos\\universityaffairs\\views\\instructorschedule\\myschedule.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -35,20 +103,8 @@
       "RelativeMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|solutionrelative:views\\secretary\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|c:\\users\\cagri\\source\\repos\\universityaffairs\\controllers\\lessoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|solutionrelative:controllers\\lessoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|c:\\users\\cagri\\source\\repos\\universityaffairs\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|c:\\users\\cagri\\source\\repos\\universityaffairs\\models\\seatingplan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|solutionrelative:models\\seatingplan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|c:\\users\\cagri\\source\\repos\\universityaffairs\\controllers\\seatingplancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|solutionrelative:controllers\\seatingplancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|c:\\users\\cagri\\source\\repos\\universityaffairs\\services\\seatingplanservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -59,28 +115,12 @@
       "RelativeMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|solutionrelative:views\\seatingplan\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|c:\\users\\cagri\\source\\repos\\universityaffairs\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|c:\\users\\cagri\\source\\repos\\universityaffairs\\data\\universitydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|solutionrelative:data\\universitydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|c:\\users\\cagri\\source\\repos\\universityaffairs\\models\\examschedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|solutionrelative:models\\examschedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|c:\\users\\cagri\\source\\repos\\universityaffairs\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|c:\\users\\cagri\\source\\repos\\universityaffairs\\views\\instructor\\myexams.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|solutionrelative:views\\instructor\\myexams.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|c:\\users\\cagri\\source\\repos\\universityaffairs\\controllers\\examschedulecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|solutionrelative:controllers\\examschedulecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D1A0B78E-7631-41EA-B24B-5F8A1EF14032}|UniversityAffairs.csproj|c:\\users\\cagri\\source\\repos\\universityaffairs\\views\\examschedule\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -94,7 +134,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -102,59 +142,124 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Views\\UserManagement\\Create.cshtml",
-              "RelativeDocumentMoniker": "Views\\UserManagement\\Create.cshtml",
-              "ToolTip": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Views\\UserManagement\\Create.cshtml*",
-              "RelativeToolTip": "Views\\UserManagement\\Create.cshtml*",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAmwCsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-19T01:00:57.028Z",
+              "DocumentIndex": 5,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Controllers\\AccountController.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAAAFUAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T01:34:01.045Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "UserManagementController.cs",
               "DocumentMoniker": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Controllers\\UserManagementController.cs",
               "RelativeDocumentMoniker": "Controllers\\UserManagementController.cs",
-              "ToolTip": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Controllers\\UserManagementController.cs*",
-              "RelativeToolTip": "Controllers\\UserManagementController.cs*",
-              "ViewState": "AgIAACYAAAAAAAAAAAAqwEoAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Controllers\\UserManagementController.cs",
+              "RelativeToolTip": "Controllers\\UserManagementController.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAwwAgAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-19T01:00:02.853Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Views\\Instructor\\Create.cshtml",
-              "RelativeDocumentMoniker": "Views\\Instructor\\Create.cshtml",
-              "ToolTip": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Views\\Instructor\\Create.cshtml*",
-              "RelativeToolTip": "Views\\Instructor\\Create.cshtml*",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAABQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-19T00:57:33.783Z",
+              "DocumentIndex": 3,
+              "Title": "InstructorController.cs",
+              "DocumentMoniker": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Controllers\\InstructorController.cs",
+              "RelativeDocumentMoniker": "Controllers\\InstructorController.cs",
+              "ToolTip": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Controllers\\InstructorController.cs",
+              "RelativeToolTip": "Controllers\\InstructorController.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAmwCAAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-25T11:42:21.715Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
+              "Title": "ExamScheduleController.cs",
+              "DocumentMoniker": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Controllers\\ExamScheduleController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ExamScheduleController.cs",
+              "ToolTip": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Controllers\\ExamScheduleController.cs",
+              "RelativeToolTip": "Controllers\\ExamScheduleController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T16:18:54.914Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SeatingPlanController.cs",
+              "DocumentMoniker": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Controllers\\SeatingPlanController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SeatingPlanController.cs",
+              "ToolTip": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Controllers\\SeatingPlanController.cs",
+              "RelativeToolTip": "Controllers\\SeatingPlanController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-25T14:42:54.136Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Views\\Instructor\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Instructor\\Index.cshtml",
               "ToolTip": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Views\\Instructor\\Index.cshtml",
               "RelativeToolTip": "Views\\Instructor\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAmwA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-06-19T00:18:26.862Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 13,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Views\\Instructor\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Instructor\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Views\\Instructor\\Create.cshtml",
+              "RelativeToolTip": "Views\\Instructor\\Create.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-19T00:57:33.783Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Views\\UserManagement\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\UserManagement\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Views\\UserManagement\\Create.cshtml",
+              "RelativeToolTip": "Views\\UserManagement\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-19T01:00:57.028Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AdminPanel.cshtml",
+              "DocumentMoniker": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Views\\Admin\\AdminPanel.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\AdminPanel.cshtml",
+              "ToolTip": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Views\\Admin\\AdminPanel.cshtml*",
+              "RelativeToolTip": "Views\\Admin\\AdminPanel.cshtml*",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAIwCMAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-19T01:38:56.009Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
               "Title": "SecretaryController.cs",
               "DocumentMoniker": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Controllers\\SecretaryController.cs",
               "RelativeDocumentMoniker": "Controllers\\SecretaryController.cs",
@@ -162,25 +267,76 @@
               "RelativeToolTip": "Controllers\\SecretaryController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T23:51:29.51Z",
+              "WhenOpened": "2025-06-18T23:51:29.51Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Views\\Instructor\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\Instructor\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Views\\Instructor\\Delete.cshtml",
+              "RelativeToolTip": "Views\\Instructor\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-19T01:55:54.6Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Views\\Instructor\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Instructor\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Views\\Instructor\\Details.cshtml",
+              "RelativeToolTip": "Views\\Instructor\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-19T01:55:56.595Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Manage.cshtml",
+              "DocumentMoniker": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Views\\Instructor\\Manage.cshtml",
+              "RelativeDocumentMoniker": "Views\\Instructor\\Manage.cshtml",
+              "ToolTip": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Views\\Instructor\\Manage.cshtml",
+              "RelativeToolTip": "Views\\Instructor\\Manage.cshtml",
+              "ViewState": "AgIAABcAAAAAAAAAAAAmwDsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-19T02:12:14.341Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Views\\Instructor\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Instructor\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Views\\Instructor\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Instructor\\Edit.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAmwCcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-19T01:56:53.244Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "LessonController.cs",
               "DocumentMoniker": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Controllers\\LessonController.cs",
               "RelativeDocumentMoniker": "Controllers\\LessonController.cs",
               "ToolTip": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Controllers\\LessonController.cs",
               "RelativeToolTip": "Controllers\\LessonController.cs",
-              "ViewState": "AgIAAJsAAAAAAAAAAAAUwKwAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAALoAAAAAAAAAAAAkwKwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-18T23:49:49.288Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 16,
               "Title": "AdminController.cs",
               "DocumentMoniker": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
@@ -193,7 +349,85 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 9,
+              "Title": "MyExams.cshtml",
+              "DocumentMoniker": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Views\\Instructor\\MyExams.cshtml",
+              "RelativeDocumentMoniker": "Views\\Instructor\\MyExams.cshtml",
+              "ToolTip": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Views\\Instructor\\MyExams.cshtml",
+              "RelativeToolTip": "Views\\Instructor\\MyExams.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAmwCMAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-25T11:46:32.842Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "wwwroot\\css\\site.css",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAA8AAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-06-19T01:46:56.484Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "AccessDenied.cshtml",
+              "DocumentMoniker": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Views\\Account\\AccessDenied.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\AccessDenied.cshtml",
+              "ToolTip": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Views\\Account\\AccessDenied.cshtml",
+              "RelativeToolTip": "Views\\Account\\AccessDenied.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-19T01:34:31.058Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-25T11:47:01.608Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-19T01:34:29.795Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "InstructorScheduleController.cs",
+              "DocumentMoniker": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Controllers\\InstructorScheduleController.cs",
+              "RelativeDocumentMoniker": "Controllers\\InstructorScheduleController.cs",
+              "ToolTip": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Controllers\\InstructorScheduleController.cs",
+              "RelativeToolTip": "Controllers\\InstructorScheduleController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T01:34:53.699Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Views\\SeatingPlan\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\SeatingPlan\\Index.cshtml",
@@ -205,44 +439,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 21,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACIAAAAAAAAAAAAAADsAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T14:43:12.939Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "SeatingPlanController.cs",
-              "DocumentMoniker": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Controllers\\SeatingPlanController.cs",
-              "RelativeDocumentMoniker": "Controllers\\SeatingPlanController.cs",
-              "ToolTip": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Controllers\\SeatingPlanController.cs",
-              "RelativeToolTip": "Controllers\\SeatingPlanController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB0AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T14:42:54.136Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "InstructorController.cs",
-              "DocumentMoniker": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Controllers\\InstructorController.cs",
-              "RelativeDocumentMoniker": "Controllers\\InstructorController.cs",
-              "ToolTip": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Controllers\\InstructorController.cs*",
-              "RelativeToolTip": "Controllers\\InstructorController.cs*",
-              "ViewState": "AgIAAFEAAAAAAAAAAAAswGgAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T11:42:21.715Z",
+              "WhenOpened": "2025-05-25T14:43:12.939Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 23,
               "Title": "MySchedule.cshtml",
               "DocumentMoniker": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Views\\InstructorSchedule\\MySchedule.cshtml",
               "RelativeDocumentMoniker": "Views\\InstructorSchedule\\MySchedule.cshtml",
@@ -250,12 +460,11 @@
               "RelativeToolTip": "Views\\InstructorSchedule\\MySchedule.cshtml",
               "ViewState": "AgIAAAIAAAAAAAAAAAAmwCYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-19T00:19:44.698Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-19T00:19:44.698Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 26,
               "Title": "SeatingPlanService.cs",
               "DocumentMoniker": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Services\\SeatingPlanService.cs",
               "RelativeDocumentMoniker": "Services\\SeatingPlanService.cs",
@@ -267,7 +476,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 28,
               "Title": "UniversityDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Data\\UniversityDbContext.cs",
               "RelativeDocumentMoniker": "Data\\UniversityDbContext.cs",
@@ -279,7 +488,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 25,
               "Title": "SeatingPlan.cs",
               "DocumentMoniker": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Models\\SeatingPlan.cs",
               "RelativeDocumentMoniker": "Models\\SeatingPlan.cs",
@@ -287,12 +496,11 @@
               "RelativeToolTip": "Models\\SeatingPlan.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T14:38:10.608Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-25T14:38:10.608Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 24,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Views\\Secretary\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Secretary\\Index.cshtml",
@@ -300,48 +508,11 @@
               "RelativeToolTip": "Views\\Secretary\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-18T23:52:20.633Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-18T23:52:20.633Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAABkAAAAAAAAAAAAqwEAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-25T11:47:01.608Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "MyExams.cshtml",
-              "DocumentMoniker": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Views\\Instructor\\MyExams.cshtml",
-              "RelativeDocumentMoniker": "Views\\Instructor\\MyExams.cshtml",
-              "ToolTip": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Views\\Instructor\\MyExams.cshtml",
-              "RelativeToolTip": "Views\\Instructor\\MyExams.cshtml",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAmwCoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-25T11:46:32.842Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "ExamScheduleController.cs",
-              "DocumentMoniker": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Controllers\\ExamScheduleController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ExamScheduleController.cs",
-              "ToolTip": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Controllers\\ExamScheduleController.cs",
-              "RelativeToolTip": "Controllers\\ExamScheduleController.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAlwCcAAABKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T16:18:54.914Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 29,
               "Title": "ExamSchedule.cs",
               "DocumentMoniker": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Models\\ExamSchedule.cs",
               "RelativeDocumentMoniker": "Models\\ExamSchedule.cs",
@@ -353,7 +524,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 30,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\Cagri\\source\\repos\\UniversityAffairs\\Views\\ExamSchedule\\Create.cshtml",
               "RelativeDocumentMoniker": "Views\\ExamSchedule\\Create.cshtml",
